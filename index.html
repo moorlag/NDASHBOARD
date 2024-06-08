@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NOLAI Dashboard v.0.1a</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #A3C2C2;
+            padding: 20px;
+            text-align: center;
+            font-size: 24px;
+            font-weight: bold;
+            color: #004165;
+        }
+        #sidebar {
+            background-color: #B0E57C;
+            padding: 20px;
+            width: 20%;
+            float: left;
+            height: calc(100vh - 60px);
+            box-sizing: border-box;
+        }
+        #main-content {
+            background-color: #ffffff;
+            padding: 20px;
+            width: 80%;
+            float: left;
+            height: calc(100vh - 60px);
+            box-sizing: border-box;
+        }
+        h2 {
+            color: #004165;
+        }
+        .project-title {
+            color: #004165;
+            margin-bottom: 10px;
+        }
+        .project-title::before {
+            content: '• ';
+            color: #FF6347;
+        }
+        #timeline {
+            margin: 20px 0;
+            position: relative;
+            padding: 10px 0;
+            background-color: #e0e0e0;
+            border-radius: 10px;
+        }
+        .milestone {
+            display: inline-block;
+            width: 18%;
+            text-align: center;
+            color: #004165;
+            position: relative;
+        }
+        .milestone::after {
+            content: '';
+            position: absolute;
+            top: 15px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 10px;
+            height: 10px;
+            background-color: #004165;
+            border-radius: 50%;
+        }
+        #issue-tracker {
+            margin: 20px 0;
+            color: #FF0000;
+        }
+        .chart-container {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+        }
+        .chart {
+            width: 48%;
+            text-align: center;
+            background-color: #f9f9f9;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .chart img {
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        NOLAI Dashboard v.0.1a
+    </header>
+    <div id="sidebar">
+        <h2>Projects Round 1</h2>
+        <div class="project-title">mAIchart po</div>
+        <div class="project-title">Technisch leren lezen met ASR</div>
+        <div class="project-title">Adaptief leren en toetsen</div>
+        <div class="project-title">Woordenschat ontwikkelen met VR</div>
+        <div class="project-title">Persoonlijk leerpad in Informatica</div>
+        <div class="project-title">Zelfregulatie tijdens het schrijven</div>
+        <div class="project-title">Efficiënter wachten op de leraar</div>
+        <div class="project-title">mAIchart vo voor kansrijke determinatie</div>
+        <div class="project-title">VIAT voor leraren</div>
+        <div class="project-title">Generatieve AI in het vo</div>
+    </div>
+    <div id="main-content">
+        <h2>Lessons Learned</h2>
+        <div class="chart-container">
+            <div class="chart">
+                <h3>Line Chart: Season Spend</h3>
+                <img src="https://via.placeholder.com/300x200" alt="Line Chart">
+            </div>
+            <div class="chart">
+                <h3>Budget Spend</h3>
+                <img src="https://via.placeholder.com/200" alt="Pie Chart">
+            </div>
+        </div>
+        <div id="timeline">
+            <h3>Activity Tracker</h3>
+            <div class="milestone">Start</div>
+            <div class="milestone">Phase 1</div>
+            <div class="milestone">Phase 2</div>
+            <div class="milestone">Phase 3</div>
+            <div class="milestone">End</div>
+        </div>
+        <div id="issue-tracker">
+            <h3>Issue Tracker</h3>
+            <div>Issue 1: Data Integration</div>
+            <div>Issue 2: User Interface</div>
+            <div>Issue 3: Performance Optimization</div>
+        </div>
+    </div>
+</body>
+</html>
