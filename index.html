@@ -56,7 +56,7 @@
             padding: 10px 0;
             background-color: #e0e0e0;
             border-radius: 10px;
-            height: 100px;
+            height: 120px;
         }
         .milestone {
             display: inline-block;
@@ -71,8 +71,8 @@
             top: 15px;
             left: 50%;
             transform: translateX(-50%);
-            width: 10px;
-            height: 10px;
+            width: 14px;
+            height: 14px;
             background-color: #004165;
             border-radius: 50%;
         }
@@ -80,14 +80,14 @@
             position: absolute;
             top: 70px;
             transform: translateX(-50%);
-            width: 10px;
-            height: 10px;
+            width: 14px;
+            height: 14px;
             background-color: #004165;
             border-radius: 50%;
             color: white;
             text-align: center;
-            line-height: 10px;
-            font-size: 8px;
+            line-height: 14px;
+            font-size: 10px;
         }
         #issue-tracker {
             margin: 20px 0;
@@ -109,6 +109,20 @@
         .chart img {
             max-width: 100%;
             height: auto;
+        }
+        .metric {
+            background-color: #f9f9f9;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .metric h4 {
+            margin: 0;
+            color: #004165;
+        }
+        .metric p {
+            margin: 5px 0 0;
         }
     </style>
 </head>
@@ -155,16 +169,16 @@
             <div class="milestone" style="left: 50%;">Phase 2</div>
             <div class="milestone" style="left: 70%;">Phase 3</div>
             <div class="milestone" style="left: 90%;">End</div>
-            <div class="dot" style="left: 8%;">1</div>
-            <div class="dot" style="left: 12%;">2</div>
-            <div class="dot" style="left: 16%;">3</div>
-            <div class="dot" style="left: 32%;">4</div>
-            <div class="dot" style="left: 36%;">5</div>
-            <div class="dot" style="left: 40%;">6</div>
-            <div class="dot" style="left: 52%;">7</div>
-            <div class="dot" style="left: 56%;">8</div>
-            <div class="dot" style="left: 72%;">9</div>
-            <div class="dot" style="left: 92%;">10</div>
+            <div class="dot" style="left: 10%;">1</div>
+            <div class="dot" style="left: 10%; top: 85px;">2</div>
+            <div class="dot" style="left: 10%; top: 100px;">3</div>
+            <div class="dot" style="left: 30%;">4</div>
+            <div class="dot" style="left: 30%; top: 85px;">5</div>
+            <div class="dot" style="left: 30%; top: 100px;">6</div>
+            <div class="dot" style="left: 50%;">7</div>
+            <div class="dot" style="left: 50%; top: 85px;">8</div>
+            <div class="dot" style="left: 70%;">9</div>
+            <div class="dot" style="left: 90%;">10</div>
         </div>
         <div id="issue-tracker">
             <h3>Issue Tracker</h3>
